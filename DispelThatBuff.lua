@@ -1,5 +1,5 @@
 local _,class = UnitClass("player")
-if class == "SHAMAN" or class == "PRIEST" or class == "WARRIOR" then
+if class == "SHAMAN" or class == "PRIEST" or class == "WARRIOR" or class == "WARLOCK" or class == "ROGUE" or class == "PALADIN" or class == "MAGE" or class == "HUNTER" or class == "DRUID" or class == "DEATHKNIGHT" then
 	local o = UnitBuff
 	UnitBuff = function(unit,...)
 		if (unit == "target" or unit == "focus") and UnitIsEnemy("player",unit) then  
